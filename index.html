@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pooja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <nav
+      class="bg-gray-800 p-4 rounded-full sticky top-5 max-w-screen-lg mx-auto w-full z-10"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white text-xl font-bold">Pooja</a>
+
+        <ul class="hidden md:flex space-x-6 text-white">
+          <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#about" class="hover:text-gray-400">About</a></li>
+          <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+          <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+
+        <button
+          id="menu-btn"
+          class="md:hidden rounded-lg text-white focus:outline-none"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col bg-gray-800 text-white text-center py-4 w-1/2 absolute top-16 right-0"
+      >
+        <li>
+          <a href="#home" class="hover:text-gray-400 block menu-item py-2"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="hover:text-gray-400 block menu-item py-2"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#skills" class="hover:text-gray-400 block menu-item py-2"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-gray-400 block menu-item py-2"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-gray-400 block menu-item py-2"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="flex items-center justify-center text-center py-20 min-h-screen"
+    >
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-6"
+      >
+        <img src="img.png" alt="Hero Image" class="w-60 h-60 rounded-full" />
+        <div class="p-40">
+          <h2 class="text-4xl font-bold">Hi There,</h2>
+          <h2 class="text-4xl font-bold">I am Pooja Makwana</h2>
+          <h3 class="text-2xl font-bold mt-2">Web Developer</h3>
+          <p class="text-gray-400 mt-2">
+            Passionate about building interactive web applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="container mx-auto p-6 text-center min-h-screen pt-20"
+    >
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-400 text-xl pt-20">
+        I am a B.Tech (Information Technology) student in my 6th semester,
+        passionate about full-stack web development, particularly with the MERN
+        stack (MongoDB, Express.js, React, Node.js). I enjoy building scalable,
+        responsive, and user-friendly web applications that solve real-world
+        problems.
+      </p>
+      <br />
+      <p class="text-gray-400 text-xl pt-10">
+        I am constantly exploring new technologies and improving my
+        problem-solving skills through hands-on projects, coding challenges, and
+        open-source contributions. My journey includes front-end design,
+        back-end development, API integration, and database management, ensuring
+        a complete understanding of modern web applications.
+      </p>
+      <br />
+      <p class="text-gray-400 text-xl pt-10">
+        Currently, I am working on projects like a 'Scan to Order' system to
+        enhance the dining experience, and I have also developed an Amazon clone
+        using HTML & CSS. I am eager to collaborate on exciting projects and
+        apply my knowledge to real-world applications. Let's connect and build
+        something amazing together!
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto p-6 text-center pt-20">
+      <h2 class="text-3xl font-bold mb-4">Skills</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 text-center justify-center mt-20"
+      >
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/html-5--v1.png"
+            alt="html"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/stickers/300/css3.png"
+            alt="css3"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/tailwindcss.png"
+            alt="tailwindcss"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/fluency/240/javascript.png"
+            alt="javascript"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/react-native.png"
+            alt="react-native"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/nodejs.png"
+            alt="nodejs"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/express-js.png"
+            alt="express-js"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/mongodb.png"
+            alt="mongodb"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/python--v1.png"
+            alt="python--v1"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/java-coffee-cup-logo--v1.png"
+            alt="java-coffee-cup-logo--v1"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/color/240/git.png"
+            alt="git"
+          />
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md h-60 flex items-center justify-center border border-gray-600"
+        >
+          <img
+            class="w-auto h-full"
+            src="https://img.icons8.com/fluency/240/github.png"
+            alt="github"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto p-6 text-center pt-20">
+      <h2 class="text-3xl font-bold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-20">
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md border border-gray-600"
+        >
+          <img
+            src="https://d24v5oonnj2ncn.cloudfront.net/wp-content/uploads/2018/10/16030301/Amazon-Logo-Black.jpg"
+            alt="Amazon Clone"
+            class="w-full h-40 object-cover rounded-md mb-2"
+          />
+          <h3 class="text-xl font-semibold">Amazon Clone</h3>
+          <p class="text-gray-400">
+            A responsive clone of Amazon using HTML and CSS.
+          </p>
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md border border-gray-600"
+        >
+          <img
+            src="https://img.freepik.com/premium-photo/weather-forecast-icons-with-cloud-3d-rendering_506001-16.jpg"
+            alt="Fake News Detection"
+            class="w-full h-40 object-cover rounded-md mb-2"
+          />
+          <h3 class="text-xl font-semibold">Weather App</h3>
+          <p class="text-gray-400">
+            A simple, responsive weather app built with HTML, CSS, and
+            JavaScript that displays current weather conditions for a given
+            location.
+          </p>
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md border border-gray-600"
+        >
+          <img
+            src="image.png"
+            alt="Scan to Order"
+            class="w-full h-40 object-cover rounded-md mb-2"
+          />
+          <h3 class="text-xl font-semibold">Food App</h3>
+          <p class="text-gray-400">
+            Developed a RESTful API backend using Node.js and MongoDB to manage
+            users, food categories, and restaurants for a food app
+          </p>
+        </div>
+        <div
+          class="bg-gray-800 p-4 rounded-lg shadow-md border border-gray-600"
+        >
+          <img
+            src="https://th.bing.com/th/id/OIP.WEZYp4u-O7LW6BRwcgRuxQAAAA?rs=1&pid=ImgDetMain"
+            alt="Node.js URL Routing"
+            class="w-full h-40 object-cover rounded-md mb-2"
+          />
+          <h3 class="text-xl font-semibold">Node.js URL Shortner</h3>
+          <p class="text-gray-400">
+            A project implementing URL routing with Node.js, Express.js, and
+            MongoDB.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="text-center bg-gray-800 w-full text-white py-6">
+      <section id="contact" class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <p class="text-gray-400">
+          📧 Email:
+          <a
+            href="mailto:poojamakvana0908@gmail.com"
+            class="text-blue-400 hover:underline"
+          >
+            poojamakvana0908@gmail.com
+          </a>
+        </p>
+        <p class="text-gray-400">
+          🔗 LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/pooja-makwana-y2026/"
+            target="_blank"
+            class="text-blue-400 hover:underline"
+          >
+            linkedin.com/in/pooja-makwana-y2026/
+          </a>
+        </p>
+        <p class="text-gray-400">
+          🐱 GitHub:
+          <a
+            href="https://github.com/Pooja985"
+            target="_blank"
+            class="text-blue-400 hover:underline"
+          >
+            https://github.com/Pooja985
+          </a>
+        </p>
+      </section>
+      <p class="text-gray-500 mt-4">
+        © 2025 Pooja Makwana. All rights reserved.
+      </p>
+    </footer>
+  </body>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuItems = document.querySelectorAll(".menu-item");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    menuItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  </script>
+</html>
